@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, #f40b93,#8217e7);
+    font-family: 'Outfit', sans-serif;
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+
+/* Header section start */
+.navbar ul{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:20px;
+}
+.nav{
+    background-color:#ffae19;
+    padding:20px;
+    width:260px;
+    text-align: center;
+    font-weight: 900;
+}
+.nav-image{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.intro{
+    padding: 20px;
+    width:60%;
+    position: relative;
+}
+
+.img-text1 {
+    position: absolute;
+    top: 200px;
+    left: 70px;
+    background-color: #ffae19;
+    font-size: 900;
+    padding:10px
+  }
+  .img-text2 {
+    position: absolute;
+    top: 280px;
+    left: 70px;
+    background-color: #ffae19;
+    font-size: 900;
+    padding:10px
+  }
+  .intro-img{
+    height: 400px;
+    width: 900px;
+}
+
+.price{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: -6px;
+
+}
+.tacos{
+    height: 185px;
+    width:390px;
+    background-color:#ffae19;
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+}
+.kobucha{
+    height: 185px;
+    width:390px;
+    background-color:#ffae19;
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+}
+/* Header section completed */
+
+/*Main starts  */
+.grid-wrapper{
+    width:100%;
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.grid-box{
+    height:160px;
+    width:23%;
+    background-color: white;
+}
+.fav-icon{
+    font-size:40px;
+    text-align: center;
+    margin-top: 15px;
+}
+.fav-text{
+    font-size:20px;
+    text-align: center;
+    margin-top: 8px;
+}
+.fav-text1{
+    font-size:15px;
+    text-align: center;
+    margin-top: 12px;
+}
+.beer{
+    color: #ffae19;
+}
+.music{
+    color:violet
+}
+.wine{
+    color:red
+}
+.burger{
+    color: yellow;
+}
+/* Main comleted */
+
+
+.section3{
+    background-color: white;
+    padding: 20px;
+    display:flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top:10px;
+  }
+
+  .content-section3 h3{
+      margin-top: 80px;
+    padding:10px;
+  }
+
+  button{
+      margin-top: 20px;
+    background-color: yellow;
+    padding: 10px;
+  }
+  .content{
+margin-top: 10px;
+padding: 5px;
+  }
+
+  .section5{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 16.6%);
+    margin: 20px 0px;
+    padding:20px;
+  }
+
+  .section5 .img_first{
+    width: 220px;
+    height: 220px;
+    padding: 10px 10px 10px 0px;
+  }
+
+  .section5 .img_end{
+    width: 220px;
+    height: 220px;
+    padding: 10px 0px 10px 10px;
+  }
+
+  .section5 .img_center{
+    width: 220px;
+    height: 220px;
+    padding: 10px;
+  }
+
+  @media screen and(min-width:576px)
+  {
+    .nav{
+        background-color:#ffae19;
+        padding:20px;
+        width:100px;
+        text-align: center;
+        font-weight: 500;
+    }
+  }
