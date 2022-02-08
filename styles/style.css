@@ -303,6 +303,9 @@ Global Styles
   .container4{
     display: none;
   }
+  .container2-content{
+      font-size: 15px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -364,6 +367,9 @@ Global Styles
   .container4{
     display: none;
   }
+  .container2-content{
+    font-size: 15px;
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
