@@ -1,189 +1,461 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --color-primary-1: #030307;
+  --color-primary-2: #0b0d1a;
+  --color-primary-3: #14162e;
+  /* primary/main color */
+  --color-primary-4: #1c2042;
+  /* lighter shades of primary color */
+  --color-primary-5: #60637b;
+  --color-primary-6: #a4a6b3;
+  --color-primary-7: #e8e9ec;
+  --clr-white: #ffffff;
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
 }
-body{
-    background-image: linear-gradient(to right, #f40b93,#8217e7);
-    font-family: 'Outfit', sans-serif;
+/*
+=============== 
+Global Styles
+===============
+*/
+
+/* Boiler plate Code */
+
+/* Project Code */
+  body{
+    background: linear-gradient(to right, rgb(234,106,145), rgb(170, 39, 170));
+    margin: 30px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  .navbar{
     width: 100%;
-}
-li{
-    list-style: none;
-}
+  }
 
-/* Header section start */
-.navbar ul{
+  .navbar .navbar-list{
     display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding:20px;
-}
-.nav{
-    background-color:#ffae19;
-    padding:20px;
-    width:260px;
-    text-align: center;
-    font-weight: 900;
-}
-.nav-image{
-    width:100%;
-    display: flex;
+    padding: 10px 0px 10px;
     justify-content: space-between;
-}
-.intro{
-    padding: 20px;
-    width:60%;
-    position: relative;
-}
+    list-style: none;
+  }
 
-.img-text1 {
+  .navbar .navbar-list li{
+    width: 15%;
+    height: 40px;
+    background-color: rgba(255, 255, 0, 0.904);
+    text-align: center;
+    padding:10px;
+    font-size: 1000;
+    font-weight: bold;
+  }
+  .container1{
+    width: 100%;
+    display: flex;
+    margin:0px;
+  }
+  .image-taco {
+    width: 70%;
+    position: relative;
+  }
+
+  .img-text1 {
     position: absolute;
     top: 200px;
     left: 70px;
     background-color: #ffae19;
-    font-size: 900;
-    padding:10px
+    font-size: 20px;
+    padding:10px;
+    width: 220px;
+    height: 75px;
+    font-weight: bold;
   }
   .img-text2 {
     position: absolute;
-    top: 280px;
+    top: 300px;
     left: 70px;
     background-color: #ffae19;
-    font-size: 900;
-    padding:10px
+    font-size: 10px;
+    padding:10px;
+    width: 125px;
+    height: 50px;
+    font-weight: bold;
   }
-  .intro-img{
-    height: 400px;
-    width: 900px;
-}
 
-.price{
-    width: 30%;
+  .tacos{
+    width: 98%;
+    height: 620px;
+  }
+
+  .prices{
+    width:30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: -6px;
-
-}
-.tacos{
-    height: 185px;
-    width:390px;
-    background-color:#ffae19;
-    text-align: center;
-    padding: 50px;
-    font-size: 20px;
-}
-.kobucha{
-    height: 185px;
-    width:390px;
-    background-color:#ffae19;
-    text-align: center;
-    padding: 50px;
-    font-size: 20px;
-}
-/* Header section completed */
-
-/*Main starts  */
-.grid-wrapper{
-    width:100%;
-    padding:20px;
-    display: flex;
-    justify-content: space-between;
-
-}
-.grid-box{
-    height:160px;
-    width:23%;
-    background-color: white;
-}
-.fav-icon{
-    font-size:40px;
-    text-align: center;
-    margin-top: 15px;
-}
-.fav-text{
-    font-size:20px;
-    text-align: center;
-    margin-top: 8px;
-}
-.fav-text1{
-    font-size:15px;
-    text-align: center;
-    margin-top: 12px;
-}
-.beer{
-    color: #ffae19;
-}
-.music{
-    color:violet
-}
-.wine{
-    color:red
-}
-.burger{
-    color: yellow;
-}
-/* Main comleted */
-
-
-.section3{
-    background-color: white;
-    padding: 20px;
-    display:flex;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top:10px;
   }
 
-  .content-section3 h3{
-      margin-top: 80px;
+  .price1{
+    background-color: yellow;
+    width:100%;
+    height: 295px;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    padding: 100px;
+  }
+
+  .price2{
+    background-color: yellow;
+    width:100%;
+    height: 295px;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    padding: 100px;
+  }
+
+  /* .dollar1 p, .dollar2 p{
+    padding: 100px;
+  } */
+
+  .container2{
+    width:100%;
+    display: flex;
+  }
+
+  .image1, .image2, .image3{
+    background-color: white;
+    padding: 20px;
+    margin:20px 20px 20px 0px;
+  }
+
+  .image4{
+    background-color: white;
+    padding: 20px;
+    margin:20px 0px 20px 0px;
+  }
+
+  .img-tacos, .img-beer, .img-wine, .img-music{
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .container-content{
+    text-align: center;
     padding:10px;
   }
 
-  button{
-      margin-top: 20px;
-    background-color: yellow;
-    padding: 10px;
-  }
-  .content{
-margin-top: 10px;
-padding: 5px;
+  .fa-hamburger{
+    color: rgb(0, 238, 255);
   }
 
-  .section5{
+  .fa-beer{
+    color: orange;
+  }
+
+  .fa-wine-glass-alt{
+    color:rgb(170, 39, 170);
+  }
+
+  .fa-music{
+    color: gold
+  }
+  .section3{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    display:flex;
+  }
+
+  .content-section3{
+    padding:60px;
+  }
+
+  button{
+    background-color: yellow;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .container4{
+    width: 100%;
+    position: relative;
+  }
+  
+  .line{
+    width: 45%;
+    height: 20px;
+    background: linear-gradient(to right, rgb(238, 237, 155), rgb(245, 241, 29));
+    float: left;
+  }
+  .line-grams{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 46%;
+  }
+
+  .line1{
+    width: 45%;
+    height: 20px;
+    background: linear-gradient(to left, rgb(238, 237, 155), rgb(245, 241, 29));
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: 0px
+  }
+  .container5{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 16.6%);
     margin: 20px 0px;
-    padding:20px;
   }
 
-  .section5 .img_first{
-    width: 220px;
-    height: 220px;
+  .container5 .img_first{
+    width: 100%;
+    height: 100%;
     padding: 10px 10px 10px 0px;
   }
 
-  .section5 .img_end{
-    width: 220px;
-    height: 220px;
+  .container5 .img_end{
+    width: 100%;
+    height: 100%;
     padding: 10px 0px 10px 10px;
   }
 
-  .section5 .img_center{
-    width: 220px;
-    height: 220px;
+  .container5 .img_center{
+    width: 100%;
+    height: 100%;
     padding: 10px;
   }
+/* Project Code */
 
-  @media screen and(min-width:576px)
-  {
-    .nav{
-        background-color:#ffae19;
-        padding:20px;
-        width:100px;
-        text-align: center;
-        font-weight: 500;
-    }
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
   }
+
+  .navbar .navbar-list{
+    display: none;
+  }
+  
+  .navbar .nav-list-menu{
+    margin: 0px 20px 20px 0px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    height: 50px;
+    background: yellow;
+  }
+
+  .fa-bars{
+    display: block;
+  }
+
+  .container1{
+    flex-direction: column;
+  }
+
+  .image-taco, .tacos, .prices {
+    width: 100%;
+  }
+
+  .price1, .price2{
+    padding:100px 25px;
+  }
+
+  .container2{
+    flex-wrap: wrap;
+  }
+
+  .image1, .image2, .image3, .image4{
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .container3{
+    flex-direction: column;
+  }
+
+  .container3-img{
+    width: 90%;
+    padding-left: 100px;
+  }
+
+  .content-section3{
+    text-align: center;
+  }
+
+  .container4{
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+ 
+  .navbar .navbar-list{
+    display: none;
+  }
+  
+  .navbar .nav-list-menu{
+    margin: 0px 20px 20px 0px;
+    padding: 20px;
+    width: 100px;
+    background: yellow;
+  }
+
+  .fa-bars{
+    display: block;
+  }
+
+  .container1{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image-taco, .tacos, .prices {
+    width: 100%;
+  }
+
+  .price1, .price2{
+    padding:100px 25px;
+  }
+
+  .container2{
+    flex-wrap: wrap;
+  }
+
+  .image1, .image2, .image3, .image4{
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .container3{
+    flex-direction: column;
+  }
+
+  .container3-img{
+    width: 90%;
+    padding-left: 100px;
+  }
+
+  .content-section3{
+    text-align: center;
+  }
+
+  .container4{
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .navbar .navbar-list{
+    display: none;
+  }
+  
+  .navbar .nav-list-menu{
+    margin: 0px 20px 20px 0px;
+    padding: 20px;
+    width: 100px;
+    background: yellow;
+  }
+
+  .fa-bars{
+    display: block;
+  }
+
+  .container1{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image-taco, .tacos, .prices {
+    width: 100%;
+  }
+
+  .price1, .price2{
+    padding:100px 50px;
+  }
+
+  .container2{
+    flex-wrap: nowrap;
+  }
+
+  .image1, .image2, .image3{
+    margin:20px 20px 20px 0px;
+  }
+
+  .image4{
+    margin:20px 0px 20px 0px;
+  }
+
+  .container3{
+    flex-direction: row;
+  }
+
+  .container4{
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+
+  .navbar .navbar-list{
+    display: flex;
+  }
+
+  .navbar .navbar-list li{
+    overflow: hidden;
+  }
+
+  .navbar .nav-list-menu{
+    display: none;
+  }
+  
+  .fa-bars{
+    display: none;
+  }
+
+  .container1{
+    flex-direction: row;
+  }
+
+  .image-taco {
+    width: 70%;
+  }
+
+  .dollar{
+    width: 30%;
+  }
+
+  .container4{
+    display: block;
+  }
+}
