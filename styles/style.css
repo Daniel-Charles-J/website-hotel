@@ -71,7 +71,7 @@ Global Styles
     margin:0px;
   }
   .image-taco {
-    width: 70%;
+    width: 100%;
     position: relative;
   }
 
@@ -127,10 +127,6 @@ Global Styles
     padding: 100px;
   }
 
-  /* .dollar1 p, .dollar2 p{
-    padding: 100px;
-  } */
-
   .container2{
     width:100%;
     display: flex;
@@ -173,7 +169,7 @@ Global Styles
   .fa-music{
     color: gold
   }
-  .section3{
+  .container3{
     width: 100%;
     background-color: white;
     padding: 20px;
@@ -457,7 +453,7 @@ Global Styles
     width: 70%;
   }
 
-  .dollar{
+  .prices{
     width: 30%;
   }
 
